@@ -4,11 +4,11 @@ const GeniusCoaching = () => {
     return (
         <div className='bg-blue-200'>
             <section className="mx-5 lg:mx-20 px-10 py-10 ">
-                <h1 className="font-playfair text-2xl md:text-4xl font-bold mb-5 uppercase">The
+                <h1 className="text-xl md:text-4xl font-bold mb-3 md:mb-5 uppercase">The
                     Let Genius be your partner in well-being</h1>
-                <p className="font-raleway mb-10 text-lg">Genius takes you from where you are now to where you want to be.
+                <p className="mb-5 md:mb-10 text-sm md:text-lg">Genius takes you from where you are now to where you want to be.
                 </p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 font-raleway">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-10">
                     <div className="shadow-lg shadow-blue-400 rounded-md md:mb-20 bg-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                         <div className="p-5">
                             <p className="my-3 pb-5 text-gray-600">

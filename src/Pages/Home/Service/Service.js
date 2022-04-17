@@ -7,7 +7,8 @@ const Service = ({ service }) => {
     const navigate = useNavigate();
 
     const navigateToCheckout = (id) => {
-        navigate("/checkout");
+
+        navigate("/checkout/" + id);
 
     }
 
