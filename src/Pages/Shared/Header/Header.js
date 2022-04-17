@@ -1,8 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import 'tw-elements';
+import auth from '../../../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleLogout = () => {
+        signOut(auth);
+    }
+
     return (
         <div>
             {/* <div className='px-2 py-5 md:p-7 bg-indigo-200 text-indigo-900 font-serif md:flex md:justify-between'>
@@ -39,20 +48,28 @@ const Header = () => {
                             <Link className="text-2xl text-white" to='/'>Your Purpose Coach</Link>
 
                             <ul className="navbar-nav flex flex-col pl-5 list-style-none mr-auto font-medium">
-                                <li className="nav-item px-2">
-                                    <Link className="nav-link hover:text-white" aria-current="page" to="home#services">Services</Link>
+                                <li className="nav-item mx-2 py-5 hover:bg-blue-100 hover:text-blue-800">
+                                    <Link className="nav-link" aria-current="page" to="home#services">Services</Link>
                                 </li>
-                                <li className="nav-item pr-2">
-                                    <Link className="nav-link hover:text-white p-0" to="/blogs">Blogs</Link>
+                                <li className="nav-item mr-2 py-5 hover:bg-blue-100 hover:text-blue-800">
+                                    <Link className="nav-link p-0" to="/blogs">Blogs</Link>
                                 </li>
-                                <li className="nav-item pr-2">
-                                    <Link className="nav-link hover:text-white p-0" to="/about">About</Link>
+                                <li className="nav-item mr-2 py-5 hover:bg-blue-100 hover:text-blue-800">
+                                    <Link className="nav-link p-0" to="/about">About</Link>
                                 </li>
-                                <li className="nav-item pr-2">
-                                    <Link className="nav-link hover:text-white p-0" to="/register">Register</Link>
+                                <li className="nav-item mr-2 py-5 hover:bg-blue-100 hover:text-blue-800">
+                                    <Link className="nav-link p-0" to="/register">Register</Link>
                                 </li>
-                                <li className="nav-item pr-2">
-                                    <Link className="nav-link hover:text-white p-0" to="/login">Login</Link>
+                                <li className={`nav-item mr-2 py-5 ${user ? 'bg-blue-100 text-blue-800' : 'hover:bg-blue-100 hover:text-blue-800'}`}>
+                                    {
+
+                                        user ?
+                                            <Link onClick={handleLogout} className="nav-link p-0" to="/home">Log Out</Link> :
+                                            <Link className="nav-link p-0" to="/login">Login</Link>
+
+
+                                    }
+
                                 </li>
                             </ul>
 
