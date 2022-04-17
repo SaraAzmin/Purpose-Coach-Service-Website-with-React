@@ -45,12 +45,13 @@ const Login = () => {
     return (
         <div>
             <section className="h-screen">
-                <div className="container px-6 h-full w-3/4 mx-auto">
-                    <h2 className='text-lg md:text-2xl pt-5 md:py-8 font-semibold uppercase font-serif text-blue-800'>Login Here</h2>
-                    <div className="flex justify-center items-center flex-wrap g-6 text-gray-800">
+                <div className="container px-3 h-full w-3/4 mx-auto">
+                    <h2 className='text-lg md:text-2xl pt-5 md:py-5 font-semibold uppercase font-serif text-blue-800 text-center'>Login Here</h2>
+                    <div className="flex justify-center items-center flex-wrap text-gray-800">
                         <div className="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                                className="w-full" alt="Phone image" />
+                                className="w-full"
+                                alt="Phone image" />
                         </div>
                         <div className="md:w-8/12 lg:w-5/12 lg:ml-20">
                             <form onSubmit={handleLogin}>
@@ -75,7 +76,7 @@ const Login = () => {
                                 {/* <!-- Submit button --> */}
                                 <input
                                     type="submit" value='Login'
-                                    className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+                                    className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 w-full"
                                     data-mdb-ripple="true"
                                     data-mdb-ripple-color="light"
                                 >
