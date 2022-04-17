@@ -24,7 +24,7 @@ const Header = () => {
             </div> */}
 
             <div>
-                <nav className="relative w-full flex flex-wrap items-center justify-between py-5 bg-indigo-200 text-indigo-900 font-serif font-semibold shadow-lg navbar navbar-expand-lg navbar-light">
+                <nav className="relative w-full flex flex-wrap items-center justify-between py-5 text-white bg-blue-800 font-serif font-semibold shadow-lg navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                         <button className="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +36,9 @@ const Header = () => {
                             </svg>
                         </button>
                         <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-                            <Link className="text-xl text-indigo-900" to='/'>Your Purpose Coach</Link>
+                            <Link className="text-2xl text-white" to='/'>Your Purpose Coach</Link>
 
-                            <ul className="navbar-nav flex flex-col pl-3 list-style-none mr-auto">
+                            <ul className="navbar-nav flex flex-col pl-5 list-style-none mr-auto font-medium">
                                 <li className="nav-item px-2">
                                     <Link className="nav-link hover:text-white" aria-current="page" to="home#services">Services</Link>
                                 </li>

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "ARE YOU READY TO TURN YOUR PASSION INTO A BUSINESS?",
+        "price": "100",
+        "description": "Find out by answering 40 questions and receive a FREE assessment report. Learn with over 2 Million Students worldwide that have taken one of Jays free online courses on success, habits and purpose",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "LEARN 12 STEPS TO TURN YOUR PASSION INTO A BUSINESS",
+        "price": "100",
+        "description": "Take this FREE Masterclass by the Jay Shetty Team. Learn with over 2 Million Students worldwide that have taken one of Jays free online courses on success, habits and purpose",
+        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Purpose Speaking with Jay Shetty",
+        "price": "200",
+        "description": "Invite Jay to inspire, empower and train your organization for wellbeing, engagement and purpose",
+        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Think Like a Monk",
+        "price": "18",
+        "description": "Get Jay’s #1 Amazon best-selling book today and apply the timeless wisdom, modern science and practical tools that can transform your life starting today",
+        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "ON PURPOSE PODCAST",
+        "price": "30",
+        "description": "Jay Shetty’s purpose is to make wisdom go viral. On Purpose podcast brings fascinating conversations with some of the most insightful people in the world straight to viewers all over the world. Listen to new episodes on Mondays and Fridays anywhere you get your podcasts. Live life today On Purpose!",
+        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Join GENIUS Coaching",
+        "price": "100",
+        "description": "Jay Shettys Genius is your life-long partner in well-being. Enjoy exclusive video workshops and meditations, recorded live each week",
+        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+    }
+]
