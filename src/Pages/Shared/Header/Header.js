@@ -15,7 +15,7 @@ const Header = () => {
     return (
 
         <div>
-            <nav className="relative w-full flex flex-wrap items-center justify-between py-5 text-white bg-blue-800 font-serif font-semibold shadow-lg navbar navbar-expand-lg navbar-light">
+            <nav className="relative w-full flex flex-wrap items-center justify-between py-3 text-white bg-blue-800 font-serif font-semibold shadow-lg navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                     <button className="navbar-toggler text-white border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
