@@ -7,6 +7,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import CHeckOut from './Pages/CheckOut/CHeckOut';
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blogs'></Route>
+        <Route path='/about'></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={<CHeckOut></CHeckOut>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
