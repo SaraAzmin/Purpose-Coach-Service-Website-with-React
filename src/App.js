@@ -8,7 +8,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import CheckOut from './Pages/CheckOut/CHeckOut';
-import Blogs from './Pages/Blogs/Blogs';
+import Blogs from './Pages/Blogs/Blogs/Blogs';
 import About from './Pages/About/About';
 
 function App() {
