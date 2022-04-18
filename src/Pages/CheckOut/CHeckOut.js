@@ -7,7 +7,7 @@ const CheckOut = () => {
 
     return (
         <div className='h-screen'>
-            <h2>Please checkout</h2>
+            <h2 className='text-xl mt-5 font-medium'>Please checkout</h2>
         </div>
     );
 };
