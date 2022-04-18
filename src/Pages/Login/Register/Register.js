@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
@@ -9,16 +9,17 @@ import Loading from '../../Shared/Loading/Loading';
 const Register = () => {
 
     const navigate = useNavigate();
+    const [updateProfile, updating, error1] = useUpdateProfile(auth);
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-
+    let errorElement;
 
     const navigateToLogin = () => {
-        navigate('/register');
+        navigate('/login');
     }
 
 
@@ -30,17 +31,22 @@ const Register = () => {
         return (<Loading></Loading>);
     }
 
+    if (error) {
+        errorElement = <p className='text-red-700 mb-2'>Error: {error?.message}</p>
+    }
 
-    const handleRegistration = (event) => {
+
+    const handleRegistration = async (event) => {
 
         event.preventDefault();
 
         const email = event.target.email.value;
         const name = event.target.name.value;
         const password = event.target.password.value;
-        //console.log(email, name, password);
 
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        alert('Updated profile');
 
     }
 
@@ -86,6 +92,7 @@ const Register = () => {
                                     className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out pl-1"
                                 >Login</Link>
                             </p>
+                            {errorElement}
                             <SocialLogin></SocialLogin>
                         </div>
                     </div>
